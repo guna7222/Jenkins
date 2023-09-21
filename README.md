@@ -1,13 +1,13 @@
-# Jenkins
-Jenkins deployment process  
+
+# Jenkins deployment process  
 - sudo apt update
 # command to install java8
 - sudo apt update openjdk-8-jdk
 # Adding jenkins repository 
 # a. Import GPG keys
-- wget -q -O -https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
-# b. add the jenkins repository to the system
-- sudo sh -c 'echo deb http://pkg.jenkins.io./debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+- wget –q –O – https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add –
+# b. add the jenkins repository to your system
+- sudo sh –c ‘echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list’
 # steps to install jenkins
 - sudo apt update
 - sudo apt install jenkins
